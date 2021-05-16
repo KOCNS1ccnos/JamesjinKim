@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_cleaning_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="kr.o3selab.homecoco.Activities.ServiceDetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/report_top_back_button"
+            android:layout_width="@dimen/toolbar_height"
+            android:layout_height="@dimen/toolbar_height"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_left"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/report_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--[공통] 사진 입력 버튼-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/report_body_image_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f1f1f1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/s_camera" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/service_select_picture_video"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <!--[공통] 사진 선택 버튼-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f1f1f1">
+
+                <LinearLayout
+                    android:id="@+id/report_body_image_select_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+
+            </HorizontalScrollView>
+
+            <!--요청사항 필드 #report_body_request -->
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/report_body_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_form"
+                android:hint="@string/service_input_request_content_cleaning"
+                android:inputType="textMultiLine"
+                android:padding="15dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <!--카테고리 선택 필드 #report_body_category-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/report_body_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_form"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/service_select_category_type"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/report_body_category_e"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/s_category_01_off" />
+
+                    <ImageView
+                        android:id="@+id/report_body_category_b"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/s_category_02_off" />
+
+                    <ImageView
+                        android:id="@+id/report_body_category_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/s_category_03_off" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--집 종류 선택 필드 #report_body_home_type-->
+            <LinearLayout
+                android:id="@+id/report_body_home_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_form"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/service_select_home_type"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/report_body_home_type_apart"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/s_building_01_off" />
+
+                    <ImageView
+                        android:id="@+id/report_body_home_type_business"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/s_building_02_off" />
+
+                    <ImageView
+                        android:id="@+id/report_body_home_type_store"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/s_building_03_off" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--집 종류 세부 선택 필드 #report_body_home_type_detail-->
+            <LinearLayout
+                android:id="@+id/report_body_home_type_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_form"
+                android:orientation="horizontal">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/report_body_home_type_detail_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:padding="20dp"
+                    android:text="@string/service_select_home_type_detail"
+                    android:textColor="@color/black" />
+
+                <FrameLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/border">
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow_down"
+                    android:tint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <!--예약시간 선택 #report_body_reservation-->
+            <LinearLayout
+                android:id="@+id/report_body_reservation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_form">
+
+                    <TextView
+                        android:id="@+id/report_body_reservation_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="상담/방문 예약일 및 시간을 선택해주세요"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <!--주소 선택 필드 #report_body_address-->
+            <LinearLayout
+                android:id="@+id/report_body_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/report_body_address_address1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_form"
+                    android:orientation="horizontal">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/report_body_address_address1_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:padding="20dp"
+                        android:text="@string/service_select_address1"
+                        android:textColor="@color/black" />
+
+                    <FrameLayout
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/border">
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/ic_arrow_down"
+                        android:tint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/report_body_address_address2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_form"
+                    android:orientation="horizontal">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/report_body_address_address2_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:padding="20dp"
+                        android:text="@string/service_select_address2"
+                        android:textColor="@color/black" />
+
+                    <FrameLayout
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/border">
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/ic_arrow_down"
+                        android:tint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--세부 주소 필드 #report_body_address_detail-->
+            <EditText
+                android:id="@+id/report_body_address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_form"
+                android:hint="@string/service_input_detail_address"
+                android:inputType="text"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <!--[공통] 전화번호 필드-->
+            <EditText
+                android:id="@+id/report_body_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_form"
+                android:hint="@string/service_input_phone"
+                android:inputType="phone"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <!--[공통] 이용약관 동의 필드-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/report_body_agree_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="@string/service_check_agree" />
+
+                <CheckBox
+                    android:id="@+id/report_body_agree_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+            <!--[공통] 입력 버튼-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/report_body_send_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:text="@string/default_ok"
+                        android:textColor="@color/white" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

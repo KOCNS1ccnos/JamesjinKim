@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">홈코코</string>
+
+    <!--공통-->
+    <string name="default_ok">확인</string>
+    <string name="default_cancel">취소</string>
+    <string name="default_delete">삭제</string>
+
+
+    <!--로그인 & 회원가입-->
+    <string name="member_form_email_hint">이메일을 입력해주세요</string>
+    <string name="member_form_name_hint">이름을 입력해주세요</string>
+    <string name="member_form_password_hint">비밀번호를 입력해주세요</string>
+    <string name="member_form_re_pw_hint">비밀번호를 한번더 입력해주세요</string>
+
+    <string name="member_form_email_error">* 이메일주소가 올바르지 않습니다</string>
+    <string name="member_form_name_error">* 이름을 입력해주세요</string>
+    <string name="member_form_password_error">* 패스워드는 6자리 이상 작성해주세요</string>
+    <string name="member_form_repw_error">* 패스워드가 일치하지 않습니다</string>
+
+    <string name="login_form_member_login">회원 로그인</string>
+    <string name="login_form_google_login">구글 로그인</string>
+    <string name="login_form_facebook_login">페이스북 로그인</string>
+    <string name="login_form_register">회원가입 하기</string>
+    <string name="register_form_register_button">회원가입</string>
+
+
+    <!--로그인 체크 다이얼로그-->
+    <string name="login_message">로그인을 하시면 다양한 서비스를 제공받을 수 있습니다. 로그인을 진행하시겠습니까?</string>
+    <string name="login_message_positive">회원가입</string>
+    <string name="login_message_neutral">로그인</string>
+    <string name="login_message_negative">비회원 이용</string>
+
+
+    <!--메인 페이지-->
+    <string name="main_menu_welcome_user">" 님 환영합니다."</string>
+    <string name="main_menu_login">회원가입 및 로그인</string>
+
+    <string name="main_menu_logout_alert">로그아웃 하시겠습니까?</string>
+
+    <string name="main_title_calling">전화문의</string>
+
+    <string name="main_body_select_service">원하시는 서비스를 선택해주세요</string>
+    <string name="main_body_service_wait">서비스 준비중 입니다!</string>
+
+
+    <!--홈코코 소개-->
+    <string name="intro_homecoco">홈코코 소개</string>
+
+    <!--서비스 선택-->
+    <string name="cleaning_title">가사도우미</string>
+    <string name="cleaning_introduce">다양한 홈서비스를 신청하세요</string>
+
+    <string name="repair_title">설비 수리/보수</string>
+    <string name="repair_introduce">수리에 필요한 모든 서비스를 신청하세요</string>
+
+    <string name="interior_title">인테리어/조경</string>
+    <string name="interior_introduce">맞춤형 인테리어 솔루션을 제공합니다</string>
+
+    <string name="question_title">무엇이든 물어보세요</string>
+    <string name="question_introduce">생활속에 불편한 사항을 문의하세요</string>
+
+    <string name="solution_title">소독/방역</string>
+    <string name="solution_introduce">위생관리가 필요한 모든 서비스를 신청하세요</string>
+
+    <string name="ebf_title">경비/미화/소방</string>
+    <string name="ebf_introduce">시설관리에 필요한 서비스를 신청하세요</string>
+
+
+    <!--서비스 세부 선택 XML-->
+    <string name="service_select_service">서비스신청</string>
+    <string name="service_select_picture_video">필요시 사진(동영상)을 올려주세요</string>
+    <string name="service_input_request_content_cleaning">요청사항\n(평수, 모델, 수량 등 기타 필요한 서비스를 입력해보세요)</string>
+    <string name="service_input_request_content_repair">요청사항\n(불편한 상태, 기타 필요한 서비스를 입력해보세요)</string>
+    <string name="service_input_request_content_interior">요청사항\n(부분, 전체, 위치 등 기타 필요한 서비스를 입력해보세요)</string>
+    <string name="service_input_request_content_question">요청사항\n(기타 필요한 서비스를 입력해보세요)</string>
+    <string name="service_input_request_content_solution">요청사항\n(위생관리가 필요한 서비스를 입력해보세요)</string>
+    <string name="service_select_video_message">동영상은 30초 이내 10M용량 이내만 전송 가능합니다.</string>
+    <string name="service_select_category_type">카테고리 선택</string>
+    <string name="service_select_home_type">공간 종류 선택</string>
+    <string name="service_select_home_type_detail">세부공간</string>
+    <string name="service_select_address1">시/구</string>
+    <string name="service_select_address2">동/면/읍</string>
+    <string name="service_input_detail_address">상세주소입력</string>
+    <string name="service_input_phone">전화번호</string>
+    <string name="service_check_agree"><![CDATA[<u>이용약관</u> 및 <u>개인정보 취급방침</u>에 동의합니다.]]></string>
+
+
+    <!--서비스 세부 선택 JAVA-->
+    <string name="service_send_service_message">요쳥하신 서비스를 처리중입니다.</string>
+    <string name="service_permission_denied">카메라 권한이 없습니다.</string>
+    <string name="service_select_pciture_over">사진은 10개 까지만 추가 가능합니다.</string>
+    <string name="service_select_movie_over">동영상은 1개만 추가가 가능합니다.</string>
+    <string name="service_take_picture_error">사진파일을 생성할 수 없습니다.</string>
+    <string name="service_take_video_error">동영상파일을 생성할 수 없습니다.</string>
+    <string name="service_request_content_error">요청사항을 5자리 이상 작성해주세요!</string>
+    <string name="service_select_home_type_error">집 종류를 선택해주세요!</string>
+    <string name="service_select_ebf_type_error">카테고리를 선택해주세요!</string>
+    <string name="service_select_address_error">주소를 선택해주세요!</string>
+    <string name="service_request_detailed_address">상세주소를 입력해주세요!</string>
+    <string name="service_request_phone_error">휴대폰번호를 입력해주세요.</string>
+    <string name="service_request_phone_error_with_phonenumber">휴대폰 번호가 올바르지 않습니다.</string>
+    <string name="service_select_agree">이용약관 및 개인정보 취급방침 동의에 체크해주세요!</string>
+    <string name="service_not_show_video">비디오는 재생이 지원되지 않습니다.</string>
+    <string name="service_remove_picture">사진을 삭제하시겠습니까?</string>
+    <string name="service_remove_video">동영상을 삭제하시겠습니까?</string>
+    <string name="service_back_message">작성하신 정보가 사라지게 됩니다. 정말로 돌아가시겠습니까?</string>
+
+
+    <!--동영상 업로드 알림 메시지-->
+    <string name="service_send_video_title">동영상을 업로드 중 입니다.</string>
+    <string name="service_send_video_message">업로드 진행중</string>
+    <string name="service_send_video_ok_title">동영상 업로드 성공</string>
+    <string name="service_send_video_ok_message">업로드 성공</string>
+    <string name="service_send_video_cancel_title">동영상 업로드 실패</string>
+    <string name="service_send_video_cancel_message">업로드 실패</string>
+    <string name="service_send_complete">정상적으로 접수가 완료되었습니다.</string>
+    <string name="service_send_failure">접수에 실패 했습니다. 잠시 후에 다시 시도해주세요!</string>
+
+
+</resources>

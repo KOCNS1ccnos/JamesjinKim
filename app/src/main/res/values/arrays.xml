@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="c_dongnam">
+        <item>광덕면</item>
+        <item>구룡동</item>
+        <item>구성동</item>
+        <item>다가동</item>
+        <item>대흥동</item>
+        <item>동면</item>
+        <item>목천읍</item>
+        <item>문성동</item>
+        <item>문화동</item>
+        <item>병천면</item>
+        <item>봉명동</item>
+        <item>북면</item>
+        <item>사직동</item>
+        <item>삼룡동</item>
+        <item>성남면</item>
+        <item>성황동</item>
+        <item>수신면</item>
+        <item>신방동</item>
+        <item>신부동</item>
+        <item>신안동</item>
+        <item>쌍용동</item>
+        <item>안서동</item>
+        <item>영성동</item>
+        <item>오룡동</item>
+        <item>용곡동</item>
+        <item>원성1동</item>
+        <item>원성2동</item>
+        <item>원성동</item>
+        <item>유량동</item>
+        <item>일봉동</item>
+        <item>중앙동</item>
+        <item>청당동</item>
+        <item>청룡동</item>
+        <item>청수동</item>
+        <item>풍세면</item>
+    </string-array>
+    <string-array name="c_subok">
+        <item>두정동</item>
+        <item>백석동</item>
+        <item>부대동</item>
+        <item>부성1동</item>
+        <item>부성2동</item>
+        <item>불당동</item>
+        <item>성거읍</item>
+        <item>성성동</item>
+        <item>성정1동</item>
+        <item>성정2동</item>
+        <item>성정동</item>
+        <item>성환읍</item>
+        <item>신당동</item>
+        <item>쌍용1동</item>
+        <item>쌍용2동</item>
+        <item>쌍용3동</item>
+        <item>쌍용동</item>
+        <item>업성동</item>
+        <item>와촌동</item>
+        <item>입장면</item>
+        <item>직산읍</item>
+        <item>차암동</item>
+    </string-array>
+    <string-array name="asan">
+        <item>권곡동</item>
+        <item>기산동</item>
+        <item>남동</item>
+        <item>도고면</item>
+        <item>둔포면</item>
+        <item>득산동</item>
+        <item>모종동</item>
+        <item>방축동</item>
+        <item>배미동</item>
+        <item>배방읍</item>
+        <item>법곡동</item>
+        <item>선장면</item>
+        <item>송악면</item>
+        <item>신동</item>
+        <item>신인동</item>
+        <item>신창면</item>
+        <item>실옥동</item>
+        <item>염치읍</item>
+        <item>영인면</item>
+        <item>온양1동</item>
+        <item>온양2동</item>
+        <item>온양3동</item>
+        <item>온양4동</item>
+        <item>온양5동</item>
+        <item>온양6동</item>
+        <item>온천동</item>
+        <item>용화동</item>
+        <item>음봉면</item>
+        <item>읍내동</item>
+        <item>인주면</item>
+        <item>장존동</item>
+        <item>점양동</item>
+        <item>좌부동</item>
+        <item>초사동</item>
+        <item>탕정면</item>
+        <item>풍기동</item>
+    </string-array>
+
+    <string-array name="home">
+        <item>전체</item>
+        <item>거실</item>
+        <item>방</item>
+        <item>부엌</item>
+        <item>욕실</item>
+        <item>발코니</item>
+        <item>현관</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="business">
+        <item>전체</item>
+        <item>사무실</item>
+        <item>회의실</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="store">
+        <item>카페</item>
+        <item>매장</item>
+        <item>식당</item>
+        <item>학원</item>
+        <item>기타</item>
+    </string-array>
+
+</resources>
